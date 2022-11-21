@@ -1,5 +1,9 @@
 # PRUEBA 3
 
+CI/CD Dockerizar un nginx con el index.html default. Elaborar un pipeline que ante cada cambio realizado sobre el index.html buildee la nueva imagen y la actualize en la plataforma elegida. (docker-compose, swarm, kuberenetes, etc.) Para la creacion del CI/CD se puede utilizar cualquier plataforma (CircleCI, Gitlab, Github, Bitbucket.)
+
+##
+
 ## Prueba de ci/cd
 Para la prueba 3 se construye la imagen nginx con alpine ,se crea el dockerfile y se prueba local una vez que funciona se sube el repo y se empieza a crear los action. Primero paso se vincula github con dockerhub para buildear la imagen, se genera token para vincular con github accion y con el token dado se crea una secret "DOCKERHUB_TOKEN" y "DOCKERHUB_USERNAME". Una vez creado se va a action y se crea desde uno del template "Docker image" se especifica el path del index donde va a hacer el check de cada cambio, se colocan los secret y se coloca el tag como latest y que se vaya enumerando a medida que se hagan los action
 
