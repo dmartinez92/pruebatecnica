@@ -13,7 +13,7 @@ Diagrama de Red Produzca un diagrama de red (puede utilizar lucidchart) de una a
 El diagrama debe hacer un mejor uso de las soluciones distribuidas.
 
 
-# Prueba 2 -
+# Prueba 2 
 
 Despliegue de una aplicación Django y React.js.Elaborar el deployment dockerizado de una aplicación en django (backend) con frontend en React.js contenida en el repositorio. Es necesario desplegar todos los servicios en un solo docker-compose.
 Se deben entregar los Dockerfiles pertinentes para elaborar el despliegue y justificar la forma en la que elabora el deployment (supervisor, scripts, dockercompose, kubernetes, etc)
