@@ -85,7 +85,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: ./prueba3/task-definition.json
-        container-name: miqueas-app
+        container-name: miqueas-app-fargate
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
@@ -93,5 +93,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: miqueas-app2
-        cluster: miqueas-app2
+        cluster: miqueas-fargate
         wait-for-service-stability: true
