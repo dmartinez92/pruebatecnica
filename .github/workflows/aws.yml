@@ -92,6 +92,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: miqueas-app2
-        cluster: miqueas-fargate
+        service: miqueas-fargate
+        cluster: miqueas-app2
         wait-for-service-stability: true
