@@ -19,4 +19,4 @@ Para el frontend no hubo mucho inconveniente al crear la imagen. Se utiliza node
 
 
 ## Docker compose 
-Para el docker compose se utiliza la version estable 3.7 se crean los dos servicios tanto frontend como backend, se buildean la imagen con el dockerfile en su directorio y se exponen los mismos puertos de los dockerfiles. En el backend se tuvo que especificar el archivo env y necesitario para que no de error
+Para el docker compose se utiliza la version estable 3.7 se crean los dos servicios tanto frontend como backend, se buildean la imagen con el dockerfile en su directorio y se exponen los mismos puertos de los dockerfiles. En el backend se tuvo que especificar el archivo env y necesitario.
