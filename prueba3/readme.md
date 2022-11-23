@@ -12,4 +12,4 @@ dockerhub : https://hub.docker.com/repository/docker/mksguti/prueba3/tags?page=1
 Para usar aws se crean dos secret actions AWS_ACCESS_KEY_ID y AWS_SECRET_ACCESS_KEY para poder vincular la accion con AWS. Comenzamos en Container Registre donde se crea el repo de la imagen a buildear. Luego se crea la task definition cuando se finaliza se copia el task-definiition.json para pegar en nuestro repositorio. Nos dirijimos a amazon EXS para crear el cluster donde correra las instancias y configuramos el servicio que colocaremos nuestor task,EC2 y cluster creado y le damos un nombre al servicio.
 Ahora vamos a nuestro git acction y creamos apartir del template Deploy to Amazon ECS y especificamos los secret,task,path,cluster, container name y servicio. Una vez finalizamos probamos la accion y se puede ver el resultado en :
 
-AWS: http://34.237.141.237/
+AWS: http://3.238.195.135/
